@@ -12,28 +12,30 @@ import com.hotdog.mysite5.security.AuthUser;
 import com.hotdog.mysite5.service.BoardService;
 import com.hotdog.mysite5.vo.UserVo;
 
+@Auth
 @Controller
+@RequestMapping("/board")
 public class BoardController {
 	@Autowired 
 	private BoardService boardService;
-
-	@RequestMapping("/photoIndex")
+	
+	
+	@RequestMapping("/photoindex")
 	public String photoIndex(){
 		return "photo/index";
 	}
-	@RequestMapping("/videoIndex")
+	
+	@RequestMapping("/videoindex")
 	public String videoIndex(){
 		return "video/index";
 	}
 	
-	@Auth
 	@RequestMapping("/photoupload")
 	public String photoUpload(@AuthUser UserVo authUser,MultipartFile photo){
 		boardService.photoUpload(authUser,photo);
 		return "photo/index";
 	}
 	
-	@Auth
 	@RequestMapping("/videoupload")
 	public String videoUpload(@AuthUser UserVo authUser,MultipartFile video){
 		boardService.videoUpload(authUser,video);

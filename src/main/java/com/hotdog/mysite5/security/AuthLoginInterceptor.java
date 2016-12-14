@@ -31,7 +31,7 @@ public class AuthLoginInterceptor extends HandlerInterceptorAdapter {
 		 UserVo userVo2=userService.login(userVo);
 			if(userVo2==null){
 				// 이메일과 비밀번호가 일치하지 않는경우 
-				response.sendRedirect(request.getContextPath()+"mysite5/user/loginform?result=fail");
+				response.sendRedirect(request.getContextPath()+"/user/loginform?result=fail");
 				return false;
 			}
 		

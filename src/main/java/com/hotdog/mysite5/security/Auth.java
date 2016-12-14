@@ -5,7 +5,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.METHOD)
+@Target(value={ElementType.METHOD, ElementType.TYPE} )
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Auth {
 	String role() default "user";   // 기본 권한을 일반 user로 설정 

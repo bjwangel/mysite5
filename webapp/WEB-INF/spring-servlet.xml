@@ -60,7 +60,8 @@
 			<bean class="com.hotdog.mysite5.security.AuthLoginInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>
-
+	
+	
 	<!-- Interceptors -->
 	<mvc:interceptors>
 		<mvc:interceptor>

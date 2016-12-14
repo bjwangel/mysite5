@@ -14,7 +14,8 @@ import com.hotdog.mysite5.vo.UserVo;
 
 @Controller
 public class BoardController {
-	@Autowired BoardService boardService;
+	@Autowired 
+	private BoardService boardService;
 
 	@RequestMapping("/photoIndex")
 	public String photoIndex(){

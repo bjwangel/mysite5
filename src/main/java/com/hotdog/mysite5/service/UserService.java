@@ -9,7 +9,8 @@ import com.hotdog.mysite5.vo.UserVo;
 @Service
 public class UserService {
 
-	@Autowired UserDao userDao;
+	@Autowired
+	private UserDao userDao;
 	
 	public void join(UserVo vo){
 		userDao.join(vo);

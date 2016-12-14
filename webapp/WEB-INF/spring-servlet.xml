@@ -51,19 +51,13 @@
 		<property name="order" value="1" />
 	</bean>
 
-	<!-- Interceptors -->
-	<mvc:interceptors>
-		<mvc:interceptor>
-			<mvc:mapping path="/board/**" />
-			<bean class="com.hotdog.mysite5.interceptor.MyInterceptor2"></bean>
-		</mvc:interceptor>
-	</mvc:interceptors>
+
 
 	<!-- Interceptors -->
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/user/login" />
-			<bean class="com.bit2016.security.AuthLoginInterceptor"></bean>
+			<bean class="com.hotdog.mysite5.security.AuthLoginInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>
 

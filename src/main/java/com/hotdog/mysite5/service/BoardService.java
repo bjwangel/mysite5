@@ -12,7 +12,9 @@ import com.hotdog.mysite5.vo.UserVo;
 
 @Service
 public class BoardService {
-	@Autowired BoardDao boardDao;
+	
+	@Autowired 
+	private BoardDao boardDao;
 	
 	public void photoUpload(UserVo vo,MultipartFile photo){
 	

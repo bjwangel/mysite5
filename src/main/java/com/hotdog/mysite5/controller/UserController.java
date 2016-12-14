@@ -2,6 +2,8 @@ package com.hotdog.mysite5.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,9 +22,12 @@ import com.hotdog.mysite5.vo.UserVo;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-	@Autowired UserService userService;
-	@Autowired BoardService boardService;
-	@Autowired CommentService commentService;
+	@Autowired 
+	private UserService userService;
+	@Autowired 
+	private BoardService boardService;
+	@Autowired 
+	private CommentService commentService;
 	
 	
 	@RequestMapping("/joinform")
@@ -36,8 +41,22 @@ public class UserController {
 			return "user/joinform";
 		}else{
 			userService.join(vo);
-			return "redirect:user/joinsuccess";
+			return "main/index";
 		}
+	}
+
+	@RequestMapping("/loginform")
+	public String loginForm() {
+		return "user/loginform";
+	}
+	
+	@RequestMapping("/logout")
+	public String logout(HttpSession session) {
+
+		session.removeAttribute("authUser");
+		session.invalidate();
+
+		return "redirect:/";
 	}
 	
 	@Auth

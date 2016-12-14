@@ -17,7 +17,7 @@ public class AuthLoginInterceptor extends HandlerInterceptorAdapter {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler /* handler Method*/ ) throws Exception {
 		UserVo userVo=new UserVo();
 		userVo.setEmail(request.getParameter("email"));
-		userVo.setPassword(request.getParameter("passWord"));
+		userVo.setPassword(request.getParameter("password"));
 		// 여기까지 request 정보를 받아서 컨테이너에 UserService를 사용해야한다.
 		
 		// Web Application Context 받아오기.. 컨테이너 사용 매개변수로  servlet context 를 전해줌
@@ -31,7 +31,7 @@ public class AuthLoginInterceptor extends HandlerInterceptorAdapter {
 		 UserVo userVo2=userService.login(userVo);
 			if(userVo2==null){
 				// 이메일과 비밀번호가 일치하지 않는경우 
-				response.sendRedirect(request.getContextPath()+"mysite4/user/loginform?result=fail");
+				response.sendRedirect(request.getContextPath()+"mysite5/user/loginform?result=fail");
 				return false;
 			}
 		

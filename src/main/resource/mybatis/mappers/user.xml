@@ -3,20 +3,20 @@
 
 <mapper namespace="user">
 
-	<insert id="insert" parameterType="uservo">
+	<insert id="join" parameterType="uservo">
 		<![CDATA[
 		insert
 		  into users
-		values( user_seq.nextval, #{name }, #{email }, #{passWord }, #{gender } )
+		values( users_seq.nextval, #{name }, #{email }, #{password } )
 		]]>
 	</insert>
 	
 	<select id="login" 
-		parameterType="map" resultType="uservo">
+		parameterType="uservo" resultType="uservo">
 		<![CDATA[
 		select no, name
 		  from users
-		 where email=#{email } and password=#{passWord }		
+		 where email=#{email } and password=#{password }		
 		]]>
 	</select>
 	

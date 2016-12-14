@@ -27,13 +27,13 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 		// 3. 접근 제어 
 		HttpSession session=request.getSession();
 		if(session== null){
-			response.sendRedirect(request.getContextPath()+"/mysite4/user/loginform");
+			response.sendRedirect(request.getContextPath()+"/mysite5/user/loginform");
 			return false;
 		}
 		
 		UserVo authUser=(UserVo)session.getAttribute("authUser");
 		if(authUser == null){
-			response.sendRedirect(request.getContextPath()+"/mysite4/user/loginform");
+			response.sendRedirect(request.getContextPath()+"/mysite5/user/loginform");
 			return false;
 		}
 		

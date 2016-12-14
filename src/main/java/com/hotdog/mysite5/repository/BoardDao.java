@@ -12,7 +12,8 @@ import com.hotdog.mysite5.vo.UserVo;
 @Repository
 public class BoardDao {
 
-	@Autowired SqlSession sqlSession;
+	@Autowired 
+	private SqlSession sqlSession;
 	
 	public String showPhoto(Long no){
 		return sqlSession.selectOne("board.showPhoto",no);

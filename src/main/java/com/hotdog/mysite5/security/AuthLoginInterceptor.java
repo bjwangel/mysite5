@@ -16,6 +16,8 @@ public class AuthLoginInterceptor extends HandlerInterceptorAdapter {
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler /* handler Method*/ ) throws Exception {
 		UserVo userVo=new UserVo();
+//		System.out.println("------------>>>>> " + request.getRequestURI());
+		
 		userVo.setEmail(request.getParameter("email"));
 		userVo.setPassword(request.getParameter("password"));
 		// 여기까지 request 정보를 받아서 컨테이너에 UserService를 사용해야한다.
@@ -41,7 +43,7 @@ public class AuthLoginInterceptor extends HandlerInterceptorAdapter {
 		
 		response.sendRedirect(request.getContextPath());
 		
-		System.out.println("AuthLoginInterceptor.preHandle called");
+//		System.out.println("AuthLoginInterceptor.preHandle called");
 		return false;
 	}
 

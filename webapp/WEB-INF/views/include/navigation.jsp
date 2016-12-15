@@ -10,36 +10,36 @@
          <c:when test="${param.menu == '' }">
             <li class="selected"><a
                href="${pageContext.request.contextPath }/">HOME</a></li>
-            <li><a href="${pageContext.request.contextPath }/photoIndex">사진 게시판</a></li>
-            <li><a href="${pageContext.request.contextPath }/videoIndex">영상 게시판</a></li>
-            <li><a href="${pageContext.request.contextPath }/myPost">내 게시글</a></li>
+            <li><a href="${pageContext.request.contextPath }/board/photoindex">사진 게시판</a></li>
+            <li><a href="${pageContext.request.contextPath }/board/videoindex">영상 게시판</a></li>
+            <li><a href="${pageContext.request.contextPath }/user/mypost">내 게시글</a></li>
          </c:when>
-         <c:when test="${param.menu == 'photoIndex' }">
+         <c:when test="${param.menu == 'photoindex' }">
             <li><a href="${pageContext.request.contextPath }/">HOME</a></li>
             <li class="selected"><a
-               href="${pageContext.request.contextPath }/photoIndex">사진 게시판</a></li>
-            <li><a href="${pageContext.request.contextPath }/videoIndex">영상 게시판</a></li>
-            <li><a href="${pageContext.request.contextPath }/myPost">내 게시글</a></li>
+               href="${pageContext.request.contextPath }/board/photoindex">사진 게시판</a></li>
+            <li><a href="${pageContext.request.contextPath }/board/videoindex">영상 게시판</a></li>
+            <li><a href="${pageContext.request.contextPath }/user/mypost">내 게시글</a></li>
          </c:when>
-         <c:when test="${param.menu == 'videoIndex' }">
+         <c:when test="${param.menu == 'videoindex' }">
          	<li><a href="${pageContext.request.contextPath }/">HOME</a></li>
-            <li><a href="${pageContext.request.contextPath }/photoIndex">사진 게시판</a></li>
+            <li><a href="${pageContext.request.contextPath }/board/photoindex">사진 게시판</a></li>
             <li class="selected"><a
-               href="${pageContext.request.contextPath }/videoIndex">영상 게시판</a></li>
-            <li><a href="${pageContext.request.contextPath }/myPost">내 게시글</a></li>
+               href="${pageContext.request.contextPath }/board/videoindex">영상 게시판</a></li>
+            <li><a href="${pageContext.request.contextPath }/user/mypost">내 게시글</a></li>
          </c:when>
          <c:when test="${param.menu == 'myPost' }">
             <li><a href="${pageContext.request.contextPath }/">HOME</a></li>
-            <li><a href="${pageContext.request.contextPath }/photoIndex">사진 게시판</a></li>
-            <li><a href="${pageContext.request.contextPath }/videoIndex">영상 게시판</a></li>
+            <li><a href="${pageContext.request.contextPath }/board/photoindex">사진 게시판</a></li>
+            <li><a href="${pageContext.request.contextPath }/board/videoindex">영상 게시판</a></li>
             <li class="selected"><a
-               href="${pageContext.request.contextPath }/myPost">내 게시글</a></li>
+               href="${pageContext.request.contextPath }/user/mypost">내 게시글</a></li>
          </c:when>
          <c:otherwise>
             <li><a href="${pageContext.request.contextPath }/">HOME</a></li>
-            <li><a href="${pageContext.request.contextPath }/photoIndex">사진 게시판</a></li>
-            <li><a href="${pageContext.request.contextPath }/videoIndex">영상 게시판</a></li>
-            <li><a href="${pageContext.request.contextPath }/myPost">내 게시글</a></li>
+            <li><a href="${pageContext.request.contextPath }/board/photoindex">사진 게시판</a></li>
+            <li><a href="${pageContext.request.contextPath }/board/videoindex">영상 게시판</a></li>
+            <li><a href="${pageContext.request.contextPath }/user/mypost">내 게시글</a></li>
          </c:otherwise>
          
       </c:choose>

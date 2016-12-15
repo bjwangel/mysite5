@@ -1,7 +1,7 @@
 package com.hotdog.mysite5.controller;
 
-import java.util.List;
-
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,6 @@ import com.hotdog.mysite5.security.AuthUser;
 import com.hotdog.mysite5.service.BoardService;
 import com.hotdog.mysite5.service.CommentService;
 import com.hotdog.mysite5.service.UserService;
-import com.hotdog.mysite5.vo.BoardVo;
 import com.hotdog.mysite5.vo.UserVo;
 
 @Controller
@@ -32,11 +31,13 @@ public class UserController {
 	
 	@RequestMapping("/joinform")
 	public String joinForm(){
+		
 		return "user/joinform";
 	}
 	
 	@RequestMapping("/join")
 	public String join(@ModelAttribute UserVo vo,BindingResult result){
+		
 		if(result.hasErrors()){
 			return "user/joinform";
 		}else{
@@ -46,7 +47,8 @@ public class UserController {
 	}
 
 	@RequestMapping("/loginform")
-	public String loginForm() {
+	public String loginForm(HttpServletRequest request,HttpServletResponse response) {
+		System.out.println(request.getAttribute("callback"));
 		return "user/loginform";
 	}
 	
@@ -76,12 +78,12 @@ public class UserController {
 	@Auth
 	@RequestMapping("/mypost")
 	public String myPost(@AuthUser UserVo authUser,Model model){
-		List<BoardVo> photo = boardService.photoPost(authUser);
-		List<BoardVo> video = boardService.videoPost(authUser);
-		
-		model.addAttribute("photo", photo);
-		model.addAttribute("video", video);
-		
+//		List<BoardVo> photo = boardService.photoPost(authUser);
+//		List<BoardVo> video = boardService.videoPost(authUser);
+//		
+//		model.addAttribute("photo", photo);
+//		model.addAttribute("video", video);
+//		
 		return "user/mypost";
 	}
 }

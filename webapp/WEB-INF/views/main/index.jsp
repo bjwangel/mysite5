@@ -21,7 +21,7 @@
 						<div id="logo">
 							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
 							<h1 id="title">Byeon JW</h1>
-							<p>크큭...</p>
+							<p>HotDog-Team</p>
 						</div>
 
 					<!-- Nav -->
@@ -41,7 +41,7 @@
 							-->
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Components</span></a></li>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 							</ul>
@@ -72,14 +72,14 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt">Hi! I'm <strong>Prologue</strong>,<a href="http://html5up.net/license"></a> responsive site<br />
+								 <a href="http://html5up.net">Byeon JW</a>.</h2>
+								<p>HotDog - team's Test Site<br />
+								Responsive Page</p>
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+								<a href="${pageContext.request.contextPath }/user/loginform" class="button scrolly">Sign In / Sign Up</a>
 							</footer>
 
 						</div>
@@ -90,26 +90,23 @@
 						<div class="container">
 
 							<header>
-								<h2>Portfolio</h2>
+								<h2>Components</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>Connect Page</p>
 
 							<div class="row">
 								<div class="4u 12u$(mobile)">
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 										<header>
-											<h3>Ipsum Feugiat</h3>
+											<h3>Photo Board</h3>
 										</header>
 									</article>
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 										<header>
-											<h3>Rhoncus Semper</h3>
+											<h3>video Board</h3>
 										</header>
 									</article>
 								</div>
@@ -117,13 +114,13 @@
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
 										<header>
-											<h3>Magna Nullam</h3>
+											<h3>Live Streaming</h3>
 										</header>
 									</article>
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
 										<header>
-											<h3>Natoque Vitae</h3>
+											<h3>My Post</h3>
 										</header>
 									</article>
 								</div>
@@ -131,13 +128,13 @@
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
 										<header>
-											<h3>Dolor Penatibus</h3>
+											<h3>Team Page</h3>
 										</header>
 									</article>
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 										<header>
-											<h3>Orci Convallis</h3>
+											<h3>Nothing</h3>
 										</header>
 									</article>
 								</div>
@@ -156,12 +153,7 @@
 
 							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>사진은 나중에 올리겠다.</p>
 
 						</div>
 					</section>
@@ -174,10 +166,7 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							<p>메일을 남기시오</p>
 
 							<form method="post" action="#">
 								<div class="row">
@@ -202,7 +191,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Hotdog-Team All rights reserved.</li><li>Design: <a href="http://html5up.net">BJW</a></li>
 					</ul>
 
 			</div>
